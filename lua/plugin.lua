@@ -24,10 +24,21 @@ require('packer').startup(function(use)
   -- use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
   -- use 'sainnhe/sonokai'
   -- use 'tanvirtin/monokai.nvim'
-  use 'rebelot/kanagawa.nvim'
+  -- use 'rebelot/kanagawa.nvim'
+  -- use 'shaunsingh/moonlight.nvim'
+  use 'tjdevries/colorbuddy.vim'
+  use 'tjdevries/gruvbuddy.nvim'
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
-  use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
-
+  -- use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
+  use {
+  "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = { 
+      "nvim-lua/plenary.nvim",
+      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim" 
+    },
+  }
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
 

@@ -1,0 +1,43 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    "Lua.diagnostics.globals": [
+        "vim",
+        "ngx"
+    ],
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.workspace.library": [
+        "/Users/nick/.config/nvim",
+        "/Users/nick/.local/share/nvim/site",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/colorbuddy.vim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/gruvbuddy.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/LuaSnip",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-dap",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
+        "/usr/local/Cellar/neovim/HEAD-aa35d15/share/nvim/runtime",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after",
+        "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-treesitter/after",
+        "${3rd}/OpenResty/library"
+    ]
+}

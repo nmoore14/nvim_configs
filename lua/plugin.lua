@@ -21,13 +21,20 @@ require('packer').startup(function(use)
   -- UI to select things (files, grep results, open buffers...)
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  -- use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
-  -- use 'sainnhe/sonokai'
-  -- use 'tanvirtin/monokai.nvim'
+  use { 'nvim-telescope/telescope-ui-select.nvim' }
+
+  ---------------------------------------
+  -- THEMES
+  ---------------------------------------
+
+  use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   -- use 'rebelot/kanagawa.nvim'
   -- use 'shaunsingh/moonlight.nvim'
-  use 'tjdevries/colorbuddy.vim'
-  use 'tjdevries/gruvbuddy.nvim'
+  -- use 'EdenEast/nightfox.nvim'
+  -- use ({ 'catppuccin/nvim', as = 'catppuccin' })
+  -- use 'katawful/kat.nvim'
+
+
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
   use {
@@ -46,10 +53,11 @@ require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
 
   -- Highlight, edit, and navigate code using a fast incremental parsing library
-  use 'nvim-treesitter/nvim-treesitter'
-  
-  -- Additional textobjects for treesitter
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'nvim-treesitter/nvim-treesitter-textobjects'
+  use 'nvim-treesitter/playground'
+  use 'nvim-treesitter/nvim-treesitter-refactor'
+
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
@@ -64,4 +72,7 @@ require('packer').startup(function(use)
 
   -- LSPing
   use 'williamboman/nvim-lsp-installer'
+
+  -- Flutter
+  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 end)

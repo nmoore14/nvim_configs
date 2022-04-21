@@ -10,7 +10,14 @@ require('telescope').setup {
             },
         },
     },
+    extensions = {
+        ['ui-select'] = {
+            require('telescope.themes').get_dropdown {}
+        }
+    }
 }
+
+require('telescope').load_extension('ui-select')
 
 -- Custom Mappings
 map('n', '<leader>space', [[<cmd>lua require('telescope.builtin').buffers()<CR>]] , options)

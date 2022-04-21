@@ -6,8 +6,8 @@ map('n', 'k', "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent
 map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent = true })
 
 -- NeoTree
-map('n', '<leader>n', '<cmd>Neotree toggle<CR>', { noremap = true, silent = true })
-map('n', '<leader>g', '<cmd>Neotree git_status<CR>', { noremap = true, silent = true })
+map('n', '<C-n>', '<cmd>Neotree toggle<CR>', { noremap = true, silent = true })
+map('n', '<C-g>', '<cmd>Neotree git_status<CR>', { noremap = true, silent = true })
 
 -- Diagnostic Keymaps
 map('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })

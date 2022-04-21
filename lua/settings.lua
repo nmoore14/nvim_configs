@@ -62,8 +62,9 @@ vim.cmd [[autocmd FileType text,markdown,html,xhtml setlocal cc=0]]
 
 -- Color scheme
 opt.termguicolors = true
-require('colorbuddy').colorscheme('gruvbuddy')
+
 vim.cmd [[
+    colorscheme onedark
     highlight ColorColumn guibg = #3b404b
 ]]
 

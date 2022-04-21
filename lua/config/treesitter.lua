@@ -17,16 +17,42 @@ require('nvim-treesitter.configs').setup {
     indent = {
         enable = true,
     },
+    matchup = {
+        enable = true,
+    },
+    autopairs = {
+        enable = true,
+    },
+    rainbow = {
+        enable = true,
+        extended_mode = true, -- Highlight also non-parentheses delimiters
+        max_file_lines = 1000,
+    },
+    playground = {
+        enable = true,
+        disable = {},
+        updatetime = 25,
+        persist_queries = false,
+        keybindings = {
+          toggle_query_editor = "o",
+          toggle_hl_groups = "i",
+          toggle_injected_languages = "t",
+          toggle_anonymous_nodes = "a",
+          toggle_language_display = "I",
+          focus_language = "f",
+          unfocus_language = "F",
+          update = "R",
+          goto_node = "<cr>",
+          show_help = "?",
+        },
+    },
     textobjects = {
-        select = {
+        lsp_interop = {
             enable = true,
-            lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
-            keymaps = {
-                -- You can use the capture groups defined in textobjects.scm
-                ['af'] = '@function.outer',
-                ['if'] = '@function.inner',
-                ['ac'] = '@class.outer',
-                ['ic'] = '@class.inner',
+            border = "none",
+            peek_definition_code = {
+                ["df"] = "@function.outer",
+                ["dF"] = "@class.outer",
             },
         },
         move = {
@@ -47,6 +73,16 @@ require('nvim-treesitter.configs').setup {
             goto_previous_end = {
                 ['[M'] = '@function.outer',
                 ['[]'] = '@class.outer',
+            },
+        },
+        select = {
+            enable = true,
+            lookahead = true,
+            keymaps = {
+              ["af"] = "@function.outer",
+              ["if"] = "@function.inner",
+              ["ac"] = "@call.outer",
+              ["ic"] = "@call.inner",
             },
         },
     },

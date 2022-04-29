@@ -17,7 +17,7 @@ require('packer').startup(function(use)
   use 'tpope/vim-fugitive' -- Git commands in nvim
   use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
-  
+
   -- UI to select things (files, grep results, open buffers...)
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
@@ -27,12 +27,13 @@ require('packer').startup(function(use)
   -- THEMES
   ---------------------------------------
 
-  use 'navarasu/onedark.nvim' -- Theme inspired by Atom
+  -- use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   -- use 'rebelot/kanagawa.nvim'
   -- use 'shaunsingh/moonlight.nvim'
   -- use 'EdenEast/nightfox.nvim'
   -- use ({ 'catppuccin/nvim', as = 'catppuccin' })
   -- use 'katawful/kat.nvim'
+    use 'rmehri01/onenord.nvim'
 
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
@@ -40,10 +41,10 @@ require('packer').startup(function(use)
   use {
   "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
-    requires = { 
+    requires = {
       "nvim-lua/plenary.nvim",
       "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim" 
+      "MunifTanjim/nui.nvim"
     },
   }
   -- Add indentation guides even on blank lines

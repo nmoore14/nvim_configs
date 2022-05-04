@@ -12,6 +12,7 @@ require('config/theme-settings')
 require('config/lualine')
 require('config/comment')
 require('config/gitsigns')
+require('config/tmux')
 
 -- require('config/nvim-tree')
 require('config/neotree')

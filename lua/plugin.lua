@@ -47,6 +47,10 @@ require('packer').startup(function(use)
       "MunifTanjim/nui.nvim"
     },
   }
+
+  -- Tmux
+  use 'aserowy/tmux.nvim'
+
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
 

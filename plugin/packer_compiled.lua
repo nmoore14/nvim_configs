@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/nick/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
+    url = "https://github.com/akinsho/flutter-tools.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -108,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "/Users/nick/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-refactor"] = {
+    loaded = true,
+    path = "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-refactor"
+  },
   ["nvim-treesitter-textobjects"] = {
     loaded = true,
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
@@ -164,10 +169,20 @@ _G.packer_plugins = {
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onenord.nvim"] = {
+    loaded = true,
+    path = "/Users/nick/.local/share/nvim/site/pack/packer/start/onenord.nvim",
+    url = "https://github.com/rmehri01/onenord.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/nick/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -184,10 +199,20 @@ _G.packer_plugins = {
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
+  ["telescope-ui-select.nvim"] = {
+    loaded = true,
+    path = "/Users/nick/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim",
+    url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/nick/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tmux.nvim"] = {
+    loaded = true,
+    path = "/Users/nick/.local/share/nvim/site/pack/packer/start/tmux.nvim",
+    url = "https://github.com/aserowy/tmux.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,

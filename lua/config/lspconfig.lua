@@ -69,3 +69,4 @@ lspconfig.sumneko_lua.setup {
 -- Imported server configs
 require('config/lsp-servers/volar')
 require('config/lsp-servers/grammarly')
+require('config/lsp-servers/dartls')

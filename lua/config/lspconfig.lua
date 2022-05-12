@@ -25,7 +25,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'rust_analyzer', 'pyright', 'tsserver', 'html', 'cssls', 'gopls', 'dartls', 'volar', 'zeta_note' }
+local servers = { 'rust_analyzer', 'pyright', 'tsserver', 'html', 'cssls', 'gopls', 'dartls', 'volar', 'grammarly'}
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
         on_attach = on_attach,
@@ -65,3 +65,7 @@ lspconfig.sumneko_lua.setup {
         },
     },
 }
+
+-- Imported server configs
+require('config/lsp-servers/volar')
+require('config/lsp-servers/grammarly')

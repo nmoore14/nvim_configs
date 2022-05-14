@@ -36,7 +36,7 @@ end
 -- Imported server configs
 require('config/lsp-servers/volar')
 require('config/lsp-servers/grammarly')
-require('config/lsp-servers/dartls')
+require('config/lsp-servers/flutter')
 
 -- Example custom server
 -- Make runtime files discoverable to the server

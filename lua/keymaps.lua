@@ -15,3 +15,5 @@ map('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap = true, sile
 map('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
 map('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', { noremap = true, silent = true })
 
+-- Flutter-tools Keymaps
+map('n', '<leader>fo', '<cmd>FlutterOutlineToggle<CR>', { noremap = true, silent = true })

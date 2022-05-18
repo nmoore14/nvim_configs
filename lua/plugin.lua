@@ -28,12 +28,12 @@ require('packer').startup(function(use)
   ---------------------------------------
 
   -- use 'navarasu/onedark.nvim' -- Theme inspired by Atom
-  -- use 'rebelot/kanagawa.nvim'
+  use 'rebelot/kanagawa.nvim'
   -- use 'shaunsingh/moonlight.nvim'
   -- use 'EdenEast/nightfox.nvim'
   -- use ({ 'catppuccin/nvim', as = 'catppuccin' })
   -- use 'katawful/kat.nvim'
-    use 'rmehri01/onenord.nvim'
+  -- use 'rmehri01/onenord.nvim'
 
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline

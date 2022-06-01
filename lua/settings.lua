@@ -64,7 +64,7 @@ vim.cmd [[autocmd FileType text,markdown,html,xhtml setlocal cc=0]]
 opt.termguicolors = true
 
 vim.cmd [[
-    colorscheme kanagawa
+    colorscheme nordfox
     highlight ColorColumn guibg = #3b404b
 ]]
 

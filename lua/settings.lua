@@ -26,6 +26,7 @@ opt.ignorecase = true               -- Ignore case letters when searching
 opt.smartcase = true                -- Ignore lowercase for the whole pattern
 opt.linebreak = true                -- Wrap on word boundary
 
+
 -- Tabs and Indents
 opt.tabstop = 4                     -- 1 tab == 4 spaces
 opt.shiftwidth = 4                  -- Shift 4 spaces when you tab
@@ -35,10 +36,14 @@ opt.smartindent = true              -- Autoindent new lines
 
 opt.backspace = 'indent,eol,start'
 
+-- Change shift/tab width based on filetype
+vim.cmd [[
+    autocmd FileType dart setlocal shiftwidth=2 shiftwidth=2 tabstop=2
+]]
+
 
 -- Search stuff
-
-opt.completeopt = 'menuone,noselect'
+opt.completeopt = 'menuone,noinsert,noselect'
 
 -- Highlight on Yank
 vim.cmd [[

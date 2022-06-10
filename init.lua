@@ -17,3 +17,11 @@ require('config/tmux')
 -- require('config/nvim-tree')
 require('config/neotree')
 require('config/luasnip')
+
+-- DAP setup
+require('config/nvim-dap-ui')
+require('config/nvim-dap-vt')
+-- DAP Languages
+require('config/dap/php')
+
+-- Custom plugins

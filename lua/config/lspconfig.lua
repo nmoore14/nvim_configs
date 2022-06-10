@@ -25,7 +25,17 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'rust_analyzer', 'pyright', 'tsserver', 'html', 'cssls', 'gopls', 'volar', 'grammarly'}
+local servers = {
+    'rust_analyzer',
+    'pyright',
+    'tsserver',
+    'html',
+    'cssls',
+    'gopls',
+    'volar',
+    'grammarly',
+    'intelephense',
+}
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
         on_attach = on_attach,
@@ -37,6 +47,7 @@ end
 require('config/lsp-servers/volar')
 require('config/lsp-servers/grammarly')
 require('config/lsp-servers/flutter')
+require('config/lsp-servers/intelephense')
 
 -- Example custom server
 -- Make runtime files discoverable to the server

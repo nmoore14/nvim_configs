@@ -15,7 +15,7 @@ vim.cmd [[
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
   use 'tpope/vim-fugitive' -- Git commands in nvim
-  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
+  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github 
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 
   -- UI to select things (files, grep results, open buffers...)
@@ -81,4 +81,7 @@ require('packer').startup(function(use)
 
   -- Flutter
   use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+
+  -- Custom plugins
+  use '/Users/nick/Desktop/dev/work-projects/neovim_plugins/ff-cmp'
 end)

@@ -21,6 +21,7 @@ require('config/luasnip')
 -- DAP setup
 require('config/nvim-dap-ui')
 require('config/nvim-dap-vt')
+require('config/nvim-dap-go')
 -- DAP Languages
 require('config/dap/php')
 

@@ -11,6 +11,6 @@ dap.configurations.php = {
         type = 'php',
         request = 'launch',
         name = 'Listen for Xdebug',
-        port = 443
+        port = 9000
     }
 }

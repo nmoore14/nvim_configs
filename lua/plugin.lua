@@ -15,7 +15,7 @@ vim.cmd [[
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
   use 'tpope/vim-fugitive' -- Git commands in nvim
-  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github 
+  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 
   -- UI to select things (files, grep results, open buffers...)
@@ -75,6 +75,7 @@ require('packer').startup(function(use)
   use 'rcarriga/nvim-dap-ui'
   use 'theHamsta/nvim-dap-virtual-text'
   use 'nvim-telescope/telescope-dap.nvim'
+  use 'leoluz/nvim-dap-go'
 
   -- LSPing
   use 'williamboman/nvim-lsp-installer'

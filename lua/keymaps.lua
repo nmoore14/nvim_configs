@@ -7,6 +7,7 @@ map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent
 
 -- NeoTree
 map('n', '<C-n>', '<cmd>Neotree toggle<CR>', options)
+map('n', '<C-b>', '<cmd>Neotree buffers<CR>', options)
 map('n', '<C-g>', '<cmd>Neotree git_status<CR>', options)
 
 -- Diagnostic Keymaps
@@ -28,3 +29,6 @@ map('n', '<leader>B', "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakp
 map('n', '<leader>lp', "<cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", options)
 map('n', '<leader>dr', "<cmd>lua require'dap'.repl.open()()<CR>", options)
 map('n', '<leader>du', "<cmd>lua require'dapui'.toggle()<CR>", options)
+
+-- Toggle Term Keymaps
+map('n', '<F6>', "<cmd>exe v:count1 . 'ToggleTerm'<CR>", options)

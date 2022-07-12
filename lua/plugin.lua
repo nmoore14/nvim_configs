@@ -27,15 +27,16 @@ require('packer').startup(function(use)
   -- THEMES
   ---------------------------------------
 
-  -- use 'navarasu/onedark.nvim' -- Theme inspired by Atom
+  use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   -- use 'rebelot/kanagawa.nvim'
   -- use 'shaunsingh/moonlight.nvim'
-  use 'EdenEast/nightfox.nvim'
+  -- use 'EdenEast/nightfox.nvim'
   -- use ({ 'catppuccin/nvim', as = 'catppuccin' })
   -- use 'katawful/kat.nvim'
   -- use 'rmehri01/onenord.nvim'
   -- use 'rktjmp/lush.nvim'
-
+  -- use 'mhartington/oceanic-next'
+  -- use 'NTBBloodbath/doom-one.nvim'
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
@@ -64,12 +65,16 @@ require('packer').startup(function(use)
   use 'nvim-treesitter/playground'
   use 'nvim-treesitter/nvim-treesitter-refactor'
 
+  use 'windwp/nvim-autopairs'
+
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
 
+  -- Terminal
+  use { 'akinsho/toggleterm.nvim', tag ='v1.*' }
   -- Debugging
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'

@@ -3,16 +3,21 @@ require('plugin')
 require('settings')
 require('keymaps')
 
+-- Theme plugins
+require('config/theme-settings')
+-- require('config/color/test')
+
 -- Plugin settings
 require('config/treesitter')
 require('config/lspconfig')
 require('config/telescope')
 require('config/nvim-cmp')
-require('config/theme-settings')
 require('config/lualine')
 require('config/comment')
 require('config/gitsigns')
 require('config/tmux')
+require('config/autopairs')
+require('config/toggle-term')
 
 -- require('config/nvim-tree')
 require('config/neotree')

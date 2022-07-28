@@ -69,7 +69,7 @@ vim.cmd [[autocmd FileType text,markdown,html,xhtml setlocal cc=0]]
 opt.termguicolors = true
 
 vim.cmd [[
-    colorscheme onedark
+    colorscheme github_dark
     highlight ColorColumn guibg = #525664
 ]]
 

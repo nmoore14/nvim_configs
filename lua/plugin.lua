@@ -27,7 +27,7 @@ require('packer').startup(function(use)
   -- THEMES
   ---------------------------------------
 
-  use 'navarasu/onedark.nvim' -- Theme inspired by Atom
+  -- use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   -- use 'rebelot/kanagawa.nvim'
   -- use 'shaunsingh/moonlight.nvim'
   -- use 'EdenEast/nightfox.nvim'
@@ -37,6 +37,7 @@ require('packer').startup(function(use)
   -- use 'rktjmp/lush.nvim'
   -- use 'mhartington/oceanic-next'
   -- use 'NTBBloodbath/doom-one.nvim'
+  use("projekt0n/github-nvim-theme")
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}

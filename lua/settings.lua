@@ -72,4 +72,3 @@ vim.cmd [[
     colorscheme github_dark
     highlight ColorColumn guibg = #525664
 ]]
-

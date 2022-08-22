@@ -1,6 +1,7 @@
 -- Custom Settings and Loaders
 require('plugin')
 require('settings')
+require('neovide-settings')
 require('keymaps')
 
 -- Theme plugins

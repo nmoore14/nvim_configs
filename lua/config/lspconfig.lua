@@ -27,15 +27,13 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 -- Enable the following language servers
 local servers = {
     'rust_analyzer',
-    'pyright',
     'tsserver',
     'html',
     'cssls',
     'gopls',
     'volar',
-    'grammarly',
     'intelephense',
-    'omnisharp'
+    'csharp_ls',
 }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
@@ -49,7 +47,7 @@ require('config/lsp-servers/volar')
 require('config/lsp-servers/grammarly')
 require('config/lsp-servers/flutter')
 require('config/lsp-servers/intelephense')
-require('config/lsp-servers/omnisharp')
+require('config/lsp-servers/csharp-ls')
 
 -- Example custom server
 -- Make runtime files discoverable to the server

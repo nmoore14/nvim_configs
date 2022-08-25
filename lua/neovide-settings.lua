@@ -1,3 +1,3 @@
 vim.cmd [[
-    set guifont=BlexMono\ NF:h11
+    set guifont=BlexMono\ NF:h10
 ]]

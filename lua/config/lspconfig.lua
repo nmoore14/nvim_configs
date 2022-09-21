@@ -33,8 +33,8 @@ local servers = {
     'cssls',
     'gopls',
     'volar',
-    'grammarly',
     'intelephense',
+    'marksman',
 }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
@@ -45,9 +45,9 @@ end
 
 -- Imported server configs
 require('config/lsp-servers/volar')
-require('config/lsp-servers/grammarly')
 require('config/lsp-servers/flutter')
 require('config/lsp-servers/intelephense')
+require('config/lsp-servers/marksman')
 
 -- Example custom server
 -- Make runtime files discoverable to the server

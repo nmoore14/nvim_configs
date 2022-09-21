@@ -32,7 +32,7 @@ map('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', options)
 map('n', '<leader>fo', '<cmd>FlutterOutlineToggle<CR>', options)
 
 -- Custom Mappings
-map('n', '<leader>space', [[<cmd>lua require('telescope.builtin').buffers()<CR>]] , options)
+map('n', '<leader>ss', [[<cmd>lua require('telescope.builtin').buffers()<CR>]] , options)
 map('n', '<leader>sf', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], options)
 map('n', '<leader>sb', [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>]], options)
 map('n', '<leader>sh', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], options)
@@ -41,6 +41,7 @@ map('n', '<leader>sd', [[<cmd>lua require('telescope.builtin').grep_string()<CR>
 map('n', '<leader>sp', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], options)
 map('n', '<leader>so', [[<cmd>lua require('telescope.builtin').tags{ only_current_buffer = true }<CR>]], options)
 map('n', '<leader>?', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], options)
+map('n', '<leader>fk', '<cmd>Telescope keymaps<CR>', options)
 
 -- DAP Telescope Mappings
 map('n', '<leader>dc', '<cmd>Telescope dap commands<CR>', options)

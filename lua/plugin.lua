@@ -14,14 +14,12 @@ vim.cmd [[
 
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
-  use 'tpope/vim-fugitive' -- Git commands in nvim
-  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
+  use 'tpope/vim-rhubarb'
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 
   -- UI to select things (files, grep results, open buffers...)
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use { 'nvim-telescope/telescope-ui-select.nvim' }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use 'nvim-telescope/telescope-dap.nvim'
 
   ---------------------------------------
@@ -38,7 +36,8 @@ require('packer').startup(function(use)
   -- use 'rktjmp/lush.nvim'
   -- use 'mhartington/oceanic-next'
   -- use 'NTBBloodbath/doom-one.nvim'
-  use("projekt0n/github-nvim-theme")
+  -- use("projekt0n/github-nvim-theme")
+  use 'Shatur/neovim-ayu'
 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
@@ -57,9 +56,6 @@ require('packer').startup(function(use)
 
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
-
-  -- Add git related info in the signs columns and popups
-  use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
 
   -- Highlight, edit, and navigate code using a fast incremental parsing library
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
@@ -88,7 +84,6 @@ require('packer').startup(function(use)
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'
   use 'theHamsta/nvim-dap-virtual-text'
-  use 'nvim-telescope/telescope-dap.nvim'
   use 'leoluz/nvim-dap-go'
 
   -- LSPing

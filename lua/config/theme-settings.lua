@@ -1,21 +1,22 @@
-require("github-theme").setup({
-  theme_style = "dimmed",
-  function_style = "italic",
-  sidebars = {"qf", "vista_kind", "terminal", "packer"},
+-- require("github-theme").setup({
+--   theme_style = "dimmed",
+--   sidebars = {"qf", "vista_kind", "terminal", "packer"},
+--
+--   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
+--   colors = {hint = "orange", error = "#ff0000"},
+--
+--   -- Overwrite the highlight groups
+--   overrides = function(c)
+--     return {
+--       htmlTag = {fg = c.red, bg = "#282c34", sp = c.hint, style = "underline"},
+--       DiagnosticHint = {link = "LspDiagnosticsDefaultHint"},
+--       -- this will remove the highlight groups
+--       TSField = {},
+--     }
+--   end
+-- })
 
-  -- Change the "hint" color to the "orange" color, and make the "error" color bright red
-  colors = {hint = "orange", error = "#ff0000"},
-
-  -- Overwrite the highlight groups
-  overrides = function(c)
-    return {
-      htmlTag = {fg = c.red, bg = "#282c34", sp = c.hint, style = "underline"},
-      DiagnosticHint = {link = "LspDiagnosticsDefaultHint"},
-      -- this will remove the highlight groups
-      TSField = {},
-    }
-  end
-})-- require('onenord').setup({
+-- require('onenord').setup({
 --   theme = dark, -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
 --   borders = true, -- Split window borders
 --   fade_nc = true, -- Fade non-current windows, making them more distinguishable
@@ -129,3 +130,7 @@ require("github-theme").setup({
 --         background = true,    -- use background color for virtual text
 --     },
 -- }
+
+require('ayu').setup({
+    mirage = true,
+})

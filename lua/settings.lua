@@ -69,7 +69,7 @@ vim.cmd [[autocmd FileType text,markdown,html,xhtml setlocal cc=0]]
 opt.termguicolors = true
 
 vim.cmd [[
-    colorscheme github_dark
+    colorscheme ayu-mirage
     highlight ColorColumn guibg = #525664
 ]]
 
